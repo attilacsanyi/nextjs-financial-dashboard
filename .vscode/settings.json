@@ -27,5 +27,7 @@
     "source.fixAll.eslint": "never"
   },
   "editor.formatOnSave": true,
-  "editor.foldingImportsByDefault": true
+  "editor.foldingImportsByDefault": true,
+  // CSS
+  "css.customData": [".vscode/css_custom_data.json"]
 }
