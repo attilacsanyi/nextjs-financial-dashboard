@@ -14,6 +14,14 @@
     ],
     "sharedGlobals": []
   },
+  "targetDefaults": {
+    "@nx/eslint:lint": {
+      "options": {
+        "maxWarnings": 0,
+        "fix": true
+      }
+    }
+  },
   "plugins": [
     {
       "plugin": "@nx/next/plugin",

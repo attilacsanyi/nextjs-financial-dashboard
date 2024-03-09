@@ -24,7 +24,31 @@
     {
       "files": ["*.ts", "*.tsx"],
       "extends": ["plugin:@nx/typescript"],
-      "rules": {}
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "warn",
+        "@typescript-eslint/no-unused-vars": [
+          "error",
+          { "argsIgnorePattern": "^_" }
+        ],
+        "@typescript-eslint/no-duplicate-enum-values": "warn",
+        "@typescript-eslint/consistent-type-definitions": ["warn", "type"],
+        "@typescript-eslint/array-type": "warn",
+        "@typescript-eslint/consistent-indexed-object-style": "warn",
+        "@typescript-eslint/no-inferrable-types": "warn",
+        "@typescript-eslint/consistent-type-assertions": "warn",
+        "@typescript-eslint/consistent-generic-constructors": "warn",
+        "@typescript-eslint/prefer-function-type": "warn",
+        "@typescript-eslint/prefer-for-of": "warn",
+        "@typescript-eslint/naming-convention": [
+          "warn",
+          { "selector": "variable", "format": ["camelCase", "PascalCase"] }
+        ],
+        "@typescript-eslint/no-non-null-assertion": "warn",
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": "warn",
+        "curly": ["error", "all"],
+        "consistent-return": ["error", { "treatUndefinedAsUnspecified": false }]
+      }
     },
     {
       "files": ["*.js", "*.jsx"],

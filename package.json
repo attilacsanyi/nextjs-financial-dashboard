@@ -2,7 +2,16 @@
   "name": "@financial-dashboard/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "migrate": "nx migrate latest",
+    "migrate:run": "nx migrate --run-migrations",
+    "start": "pnpm exec nx run financial-dashboard:dev",
+    "lint": "pnpm nx run-many --target=lint",
+    "test": "pnpm nx run-many --target=test",
+    "tdd": "nx watch --all -- pnpm nx affected --target=test --files=\\$NX_FILE_CHANGES",
+    "preinstall": "npx only-allow pnpm",
+    "format": "nx format:write --all"
+  },
   "private": true,
   "dependencies": {
     "next": "14.0.4",
