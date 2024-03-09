@@ -5,7 +5,7 @@
   "scripts": {
     "migrate": "nx migrate latest",
     "migrate:run": "nx migrate --run-migrations",
-    "start": "pnpm exec nx run financial-dashboard:dev",
+    "dev": "pnpm exec nx run financial-dashboard:dev",
     "lint": "pnpm nx run-many --target=lint",
     "test": "pnpm nx run-many --target=test",
     "tdd": "nx watch --all -- pnpm nx affected --target=test --files=\\$NX_FILE_CHANGES",
