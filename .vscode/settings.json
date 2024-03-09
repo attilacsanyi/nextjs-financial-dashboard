@@ -24,7 +24,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.codeActionsOnSave": {
     "source.organizeImports": "always",
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "never"
   },
   "editor.formatOnSave": true,
   "editor.foldingImportsByDefault": true

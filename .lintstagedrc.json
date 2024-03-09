@@ -1,0 +1,4 @@
+{
+  "*.{ts, tsx}": ["pnpm exec nx affected:lint --parallel --uncommitted"],
+  "*": ["pnpm exec nx format:write --uncommitted"]
+}
