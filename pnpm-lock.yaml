@@ -71,7 +71,7 @@ devDependencies:
     specifier: 0.5.2
     version: 0.5.2
   '@testing-library/react':
-    specifier: ^14.2.1
+    specifier: 14.2.1
     version: 14.2.1(react-dom@18.2.0)(react@18.2.0)
   '@types/jest':
     specifier: 29.4.0
