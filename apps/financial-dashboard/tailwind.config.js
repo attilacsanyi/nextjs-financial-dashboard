@@ -13,5 +13,12 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [
+    async () => {
+      const prettierPluginTailwindcss = await import(
+        'prettier-plugin-tailwindcss'
+      );
+      return prettierPluginTailwindcss.default;
+    },
+  ],
 };
